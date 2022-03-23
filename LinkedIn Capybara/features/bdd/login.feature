@@ -12,7 +12,7 @@ Cenario: Login com sucesso
 Quando ele digitar as credenciais validas
 Entao deve acessar o site com sucesso
 
-Cenario: Login com perda de conexao
-E ele perca a conexao com a internet
-Quando ele digitar as credenciais validas
-Entao aviso sobre a falta de conexao deve aparecer 
+# Cenario: Login com perda de conexao
+# E ele perca a conexao com a internet
+# Quando ele digitar as credenciais validas
+# Entao aviso sobre a falta de conexao deve aparecer 
