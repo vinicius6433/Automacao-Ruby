@@ -1,15 +1,14 @@
 Dado('que o usuario queira se logar') do
-    @test = LoginPage.new
-    @test.load
+    login.load
 end
 
 Quando('ele digitar as credenciais validas') do
-   @test.userLogin(CREDENTIAL[:user][:email], CREDENTIAL[:user][:password])
+   login.userLogin(CREDENTIAL[:user][:email], CREDENTIAL[:user][:password])
 end
 
 Entao('deve acessar o site com sucesso') do
-    @home = HomePage.new
-    @home.checkLoginSucessful
+    home.checkLoginSucessful
+    # recover.sendEmail
 end
 
 # Dado('ele perca a conexao com a internet') do
