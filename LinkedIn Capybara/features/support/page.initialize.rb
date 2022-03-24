@@ -1,4 +1,4 @@
-Dir[File.join(File.dirname(__FILE__), '~\Desktop\Automação\LinkedIn Capybara\LinkedIn Capybara\features\pages*.page.rb')].each { |file| require file }
+Dir[File.join(File.dirname(__FILE__), '~\..\Automação\LinkedIn Capybara\LinkedIn Capybara\features\pages*.page.rb')].each { |file| require file }
 
 module Page
     def login
@@ -6,7 +6,7 @@ module Page
     end
 
     def home 
-        @home ||= homePage.new
+        @home ||= HomePage.new
     end
 
     def recover 
